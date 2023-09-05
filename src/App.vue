@@ -10,6 +10,7 @@ import { RouterView } from 'vue-router';
       </h1>
     </div>
   </header>
+  
   <main class="max-w-6xl mx-auto mt-10">
     <RouterView />
   </main>
