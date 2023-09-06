@@ -12,6 +12,11 @@ const props = defineProps({
 const nombreCliente = computed(() => {
     return props.cliente.nombre + ' ' + props.cliente.apellido
 });
+
+const estadoCliente = computed(() => {
+    return props.cliente.estado
+});
+
 </script>
 
 <template>
@@ -25,7 +30,10 @@ const nombreCliente = computed(() => {
             <p class="text-gray-600">{{ cliente.puesto }}</p>
         </td>
         <td class="whitespace-nowrap px-3 py-4 text-sm">
-
+            <button class="inline-flex rounded-full px-2 text-xs font-semibold leading-5"
+                :class="[estadoCliente ? 'bg-green-100 text-green-800' : 'bg-red-100 text-green-800']">
+                {{ estadoCliente ? 'Activo' : 'Inactivo' }}
+            </button>
         </td>
         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 ">
             <RouterLink to="/" class="text-indigo-600 hover:text-indigo-900 mr-5">

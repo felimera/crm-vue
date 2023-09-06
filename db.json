@@ -15,6 +15,14 @@
       "email": "carlos.pena@gmail.com",
       "telefono": "123-123-1234",
       "id": 2
+    },
+    {
+      "nombre": "Luis",
+      "apellido": "Ramirez",
+      "email": "luis.ramirez@gmail.com",
+      "telefono": "147-258-1236",
+      "estado": 1,
+      "id": 3
     }
   ]
 }
