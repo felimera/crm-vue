@@ -13,27 +13,11 @@ const route = useRoute();
 
 const { id } = route.params;
 
-const formData = reactive({
-    nombre: '',
-    apellido: '',
-    email: '',
-    telefono: '',
-    empresa: '',
-    puesto: ''
-});
+const formData = reactive({});
 
 onMounted(() => {
     ClienteService.obtenerCLiente(id)
-        .then(({ data }) => {
-            console.log(data)
-
-            formData.nombre = data.nombre;
-            formData.apellido = data.apellido;
-            formData.telefono = data.telefono;
-            formData.email = data.email;
-            formData.empresa = data.empresa;
-            formData.puesto = data.puesto;
-        })
+        .then(({ data }) => Object.assign(formData, data))
         .catch(error => console.log(error))
 });
 
@@ -95,4 +79,5 @@ const handleSubmit = data => {
 <style>
 .formkit-wrapper {
     max-width: 100%;
-}</style>
+}
+</style>
