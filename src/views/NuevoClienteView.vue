@@ -19,7 +19,7 @@ const handleSubmit = data => {
         .then(respuesta => {
             console.log('respuesta', respuesta);
             // Redireccionar
-            router.push({ name: 'inicio' });
+            router.push({ name: 'listado-clientes' });
         })
         .catch(error => console.log('error', error));
 }
@@ -29,7 +29,7 @@ const handleSubmit = data => {
 <template>
     <div>
         <div class="flex justify-end">
-            <RouterLink to="inicio">
+            <RouterLink to="listado-clientes">
                 Volver
             </RouterLink>
         </div>
