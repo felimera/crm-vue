@@ -8,6 +8,13 @@
       "empresa": "Exito",
       "puesto": "Vendedor",
       "id": 1
+    },
+    {
+      "nombre": "Carlos",
+      "apellido": "Peña",
+      "email": "carlos.pena@gmail.com",
+      "telefono": "123-123-1234",
+      "id": 2
     }
   ]
 }
