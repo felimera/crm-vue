@@ -7,4 +7,7 @@ export default {
   agregarCliente(data) {
     return api.post("/clientes", data);
   },
+  obtenerCLiente(id) {
+    return api.get("/clientes/" + id);
+  },
 };
