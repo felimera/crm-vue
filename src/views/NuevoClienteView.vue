@@ -34,8 +34,9 @@ defineProps({
                     <FormKit type="email" label="Email" placeholder="Email del cliente" validation="required|email"
                         :validation-messages="{ required: 'El Email del Cliente es Obligatorio.', email: 'Coloca un Email válido' }" />
 
-                    <FormKit type="text" label="Teléfono" placeholder="Teléfono: XXX-XXX-XXXX" validation="required|email"
-                        :validation-messages="{ required: 'El Teléfono del Cliente es Obligatorio.', email: 'Coloca un Email válido' }" />
+                    <FormKit type="text" label="Teléfono" placeholder="Teléfono: XXX-XXX-XXXX"
+                        validation="*matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/"
+                        :validation-messages="{ matches: 'El formato no es válido' }" />
 
                 </FormKit>
             </div>
