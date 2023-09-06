@@ -1,12 +1,13 @@
 {
   "clientes": [
     {
-      "id": 1,
-      "nombre": "Juan"
-    },
-    {
-      "id": 2,
-      "nombre": "Carlos"
+      "nombre": "Juan",
+      "apellido": "Gomez",
+      "email": "juan.gomez@gmail.com",
+      "telefono": "333-333-3333",
+      "empresa": "Exito",
+      "puesto": "Vendedor",
+      "id": 1
     }
   ]
 }
