@@ -1,0 +1,22 @@
+{
+  "clientes": [
+    {
+      "nombre": "Carlos ",
+      "apellido": "Peña Salazar",
+      "email": "carlos.pena@gmail.com",
+      "telefono": "123-123-1234",
+      "empresa": "Cerveza Bavaria",
+      "puesto": "Gerente de recursos humanos",
+      "estado": true,
+      "id": 2
+    },
+    {
+      "nombre": "Luis",
+      "apellido": "Ramirez",
+      "email": "luis.ramirez@gmail.com",
+      "telefono": "147-258-1236",
+      "estado": true,
+      "id": 3
+    }
+  ]
+}
