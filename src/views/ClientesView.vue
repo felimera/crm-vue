@@ -31,6 +31,13 @@ const actualizarEstado = ({ id, estado }) => {
         })
         .catch(error => console.log(error));
 }
+
+const eliminarCliente = id => {
+    ClienteService.eliminarCliente(id)
+        .then(() => clientes.value = clientes.value.filter(cliente => cliente.id !== id))
+        .catch(error => console.log(error));
+}
+
 </script>
 
 <template>
@@ -56,7 +63,7 @@ const actualizarEstado = ({ id, estado }) => {
                         </thead>
                         <tbody class="divide-y divide-gray-200 bg-white">
                             <Cliente v-for="cliente in clientes" :key="cliente.id" :cliente="cliente"
-                                @actualizar-estado="actualizarEstado" />
+                                @actualizar-estado="actualizarEstado" @eliminar-cliente="eliminarCliente" />
                         </tbody>
                     </table>
                 </div>
